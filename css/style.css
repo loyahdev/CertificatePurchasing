@@ -833,7 +833,7 @@ a:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .food_section .food_container .box {
     margin-bottom: 1800px;
   }
