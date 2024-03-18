@@ -829,13 +829,13 @@ a:focus {
 
 @media (max-width: 768px) {
   .food_section .food_container .box {
-    margin-bottom: 1400px;
+    /*margin-bottom: 1400px;*/
   }
 }
 
 @media (max-width: 600px) {
   .food_section .food_container .box {
-    margin-bottom: 2000px;
+    /*margin-bottom: 2000px;*/
   }
 }
 
