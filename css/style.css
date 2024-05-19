@@ -788,7 +788,7 @@ a:focus {
 }
 
 .food_section {
-  background-color: #0a2050; /* Solid blue background */
+  background: #0a2050; /* Solid blue background */
 }
 
 .food_section .heading_container {
@@ -823,18 +823,18 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  /*margin: 45px 20px 0 20px;*/
+  background-color: transparent; /* Ensure no background color */
 }
 
 @media (max-width: 768px) {
   .food_section .food_container .box {
-    /*margin-bottom: 1400px;*/
+    /* Adjust margins if needed */
   }
 }
 
 @media (max-width: 600px) {
   .food_section .food_container .box {
-    /*margin-bottom: 2000px;*/
+    /* Adjust margins if needed */
   }
 }
 
@@ -843,13 +843,8 @@ a:focus {
 }
 
 .food_section .food_container .box .detail-box {
-  /*margin-top: 15px;*/
+  background-color: transparent; /* Ensure no background color */
 }
-
-/*.food_section .food_container .box .detail-box h6 {
-  color: #ffffff;
-  text-transform: uppercase;
-}*/
 
 .food_section .food_container .box .detail-box h3 {
   font-weight: bold;
@@ -861,22 +856,19 @@ a:focus {
 }
 
 .food_section .food_container .box .detail-box a {
-  /*display: inline-block;*/
   padding: 8px 45px;
-  background-color: #0a2050;
+  background-color: #0a2050; /* Blue background for buttons */
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #0a2050;
   border-radius: 0;
-  /*margin-top: 15px;*/
 }
 
 .food_section .food_container .box .detail-box a:hover {
-  background-color: #0a2050;
+  background-color: #0a2050; /* Ensure blue background on hover */
   color: #ffffff;
 }
-
 
 .client_section {
   background-image: url(../images/client-bg.jpg);
