@@ -863,7 +863,7 @@ a:focus {
 }
 
 .food_section .food_container .box .detail-box a {
-  display: inline-block;
+  /*display: inline-block;*/
   padding: 8px 45px;
   background-color: #0a2050;
   color: #ffffff;
