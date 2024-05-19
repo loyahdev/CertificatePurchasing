@@ -788,8 +788,7 @@ a:focus {
 }
 
 .food_section {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #0a2050), color-stop(60%, transparent));
-  background: linear-gradient(to bottom, #0a2050 60%, transparent 60%);
+  background-color: #0a2050; /* Solid blue background */
 }
 
 .food_section .heading_container {
@@ -839,7 +838,6 @@ a:focus {
   }
 }
 
-
 .food_section .food_container .box .img-box img {
   max-width: 100%;
 }
@@ -875,9 +873,10 @@ a:focus {
 }
 
 .food_section .food_container .box .detail-box a:hover {
-  background-color: transparent;
-  color: #0a2050;
+  background-color: #0a2050;
+  color: #ffffff;
 }
+
 
 .client_section {
   background-image: url(../images/client-bg.jpg);
