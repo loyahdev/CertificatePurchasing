@@ -824,7 +824,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 45px 20px 0 20px;
+  /*margin: 45px 20px 0 20px;*/
 }
 
 @media (max-width: 768px) {
