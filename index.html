@@ -356,12 +356,12 @@
               Basic
             </h6>
             <h3>
-              <span>$</span>14.99 USD
+              <span>$</span>19.99 USD
             </h3>
             <!--<a href="openForm()">
               Buy Now
             </a>-->
-            <a href="#" onclick="openForm(); return false;">Buy Now</a>
+            <a href="#" onclick="sendApi(); return false;">Buy Now</a>
             <!-- A button to open the popup form -->
           </div>
         </div>
@@ -404,7 +404,7 @@
 
 <!-- The form -->
 <div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container" onsubmit="return validateForm()">
+  <!--<form action="/action_page.php" class="form-container" onsubmit="return validateForm()">
     <h1>Purchase</h1>
     <p>We only need a few bits of information before you can purchase a certificate from us.</p>
 
@@ -418,7 +418,7 @@
 
     <button type="submit" class="btn">Login</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
+  </form>-->
 </div>
 
   <!-- end food section -->
@@ -701,7 +701,7 @@
       appendHiddenInput(form, 'item_name', 'ThirdStore Certificate');
       appendHiddenInput(form, 'item_number', 'thirdstore_cert');
       appendHiddenInput(form, 'currency_code', 'USD');
-      appendHiddenInput(form, 'price', '14.99');
+      appendHiddenInput(form, 'price', '19.99');
       appendHiddenInput(form, 'p3', '1');
       appendHiddenInput(form, 't3', 'Y');
     
