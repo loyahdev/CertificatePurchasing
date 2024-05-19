@@ -705,21 +705,21 @@
       appendHiddenInput(form, 'p3', '1');
       appendHiddenInput(form, 't3', 'Y');
     
-      var udid = document.getElementById('udid').value;
-      var dname = document.getElementById('dname').value;
-      appendHiddenInput(form, 'device_name', dname); // Use the user-provided device name
+      //var udid = document.getElementById('udid').value;
+      //var dname = document.getElementById('dname').value;
+      //appendHiddenInput(form, 'device_name', dname); // Use the user-provided device name
     
       var requestParameters = JSON.stringify([{
         "name": "udid",
         "type": "text",
         "placeholder": "UDID",
-        "text": "A UDID is your device identifier. We need your UDID to get your device registered with Apple.",
+        "text": "A UDID is your device identifier.",
         "link": {
           "text": "Get your UDID",
           "url": "https://udid.starfiles.co"
         }
       }]);
-      appendHiddenInput(form, 'request_parameters', requestParameters.replace('UDID', udid)); // Inject the UDID dynamically
+      //appendHiddenInput(form, 'request_parameters', requestParameters.replace('UDID', udid)); // Inject the UDID dynamically
     
       appendHiddenInput(form, 'cancel_return', 'https://signtunes.co');
       appendHiddenInput(form, 'return', 'https://signtunes.co/success');
