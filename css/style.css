@@ -787,8 +787,16 @@ a:focus {
   margin-left: 5px;
 }
 
+/* Add specific resets and background colors */
+.food_section, .food_section * {
+  background-color: #0a2050 !important; /* Ensuring background is set for all elements */
+  margin: 0;
+  padding: 0;
+  color: #ffffff; /* Ensure all text is readable */
+  box-sizing: border-box;
+}
+
 .food_section {
-  background-color: #0a2050; /* Solid blue background */
   padding: 60px 0; /* Adjust padding if necessary */
 }
 
@@ -798,6 +806,10 @@ a:focus {
   text-align: center;
   color: #ffffff;
   margin-bottom: 40px; /* Adjust margin if necessary */
+}
+
+.food_section .heading_container p {
+  margin: 0; /* Ensure no additional margins */
 }
 
 .food_section .food_container {
