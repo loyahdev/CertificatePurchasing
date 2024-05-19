@@ -788,7 +788,8 @@ a:focus {
 }
 
 .food_section {
-  background: #0a2050; /* Solid blue background */
+  background-color: #0a2050; /* Solid blue background */
+  padding: 60px 0; /* Adjust padding if necessary */
 }
 
 .food_section .heading_container {
@@ -797,6 +798,7 @@ a:focus {
           align-items: center;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 40px; /* Adjust margin if necessary */
 }
 
 .food_section .food_container {
@@ -809,6 +811,7 @@ a:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 .food_section .food_container .box {
@@ -824,17 +827,50 @@ a:focus {
           align-items: center;
   text-align: center;
   background-color: transparent; /* Ensure no background color */
+  padding: 20px; /* Adjust padding if necessary */
+}
+
+.food_section .food_container .box .img-box img {
+  max-width: 100%;
+}
+
+.food_section .food_container .box .detail-box {
+  background-color: transparent; /* Ensure no background color */
+}
+
+.food_section .food_container .box .detail-box h3 {
+  font-weight: bold;
+  color: #490382;
+}
+
+.food_section .food_container .box .detail-box h3 span {
+  color: #490382;
+}
+
+.food_section .food_container .box .detail-box a {
+  padding: 8px 45px;
+  background-color: #0a2050; /* Blue background for buttons */
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #0a2050;
+  border-radius: 0;
+}
+
+.food_section .food_container .box .detail-box a:hover {
+  background-color: #0a2050; /* Ensure blue background on hover */
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
   .food_section .food_container .box {
-    /* Adjust margins if needed */
+    margin-bottom: 20px; /* Adjust margin for smaller screens if necessary */
   }
 }
 
 @media (max-width: 600px) {
   .food_section .food_container .box {
-    /* Adjust margins if needed */
+    margin-bottom: 20px; /* Adjust margin for smaller screens if necessary */
   }
 }
 
