@@ -793,41 +793,28 @@ a:focus {
 }
 
 .food_section .heading_container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex;
+  align-items: center;
   text-align: center;
   color: #ffffff;
   margin-bottom: 40px; /* Adjust margin if necessary */
 }
 
 .food_section .food_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 .food_section .food_container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: transparent; /* Ensure no background color */
   padding: 20px; /* Adjust padding if necessary */
+  width: 100%;
 }
 
 .food_section .food_container .box .img-box img {
@@ -851,7 +838,6 @@ a:focus {
   padding: 8px 45px;
   background-color: #0a2050; /* Blue background for buttons */
   color: #ffffff;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #0a2050;
   border-radius: 0;
@@ -863,12 +849,20 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+  .food_section .heading_container p {
+    margin-bottom: 20px; /* Adjust margin for smaller screens if necessary */
+  }
+
   .food_section .food_container .box {
     margin-bottom: 20px; /* Adjust margin for smaller screens if necessary */
   }
 }
 
 @media (max-width: 600px) {
+  .food_section .heading_container p {
+    margin-bottom: 20px; /* Adjust margin for smaller screens if necessary */
+  }
+
   .food_section .food_container .box {
     margin-bottom: 20px; /* Adjust margin for smaller screens if necessary */
   }
