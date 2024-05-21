@@ -94,8 +94,7 @@
   }
 
   .food_section {
-    background: linear-gradient(to bottom, #0a2050 30%, transparent 30%);
-
+    background: linear-gradient(to bottom, #0a2050 65%, transparent 60%);
   }
 
   .food_section .food_container {
